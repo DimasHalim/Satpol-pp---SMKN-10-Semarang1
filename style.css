@@ -1,0 +1,449 @@
+/* Reset CSS Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f8fafc;
+    color: #334155;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #0f172a;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 3px solid #f59e0b;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.logo-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    font-size: 28px;
+    color: #f59e0b;
+}
+
+.logo-brand h1 {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.logo-brand p {
+    font-size: 11px;
+    color: #f59e0b;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f59e0b;
+}
+
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #1e293b;
+    color: white;
+    padding: 60px 0;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.hero-image {
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 15px;
+    border: 3px solid #f59e0b;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.image-caption {
+    margin-top: 10px;
+}
+
+.image-caption h3 {
+    font-size: 16px;
+}
+
+.image-caption p {
+    font-size: 12px;
+    color: #f59e0b;
+}
+
+.hero-text {
+    flex: 1.5;
+    min-width: 300px;
+}
+
+.badge {
+    background-color: rgba(245, 158, 11, 0.2);
+    color: #f59e0b;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid #f59e0b;
+}
+
+.hero-text h2 {
+    font-size: 32px;
+    margin: 15px 0;
+    line-height: 1.2;
+}
+
+.hero-text h2 span {
+    color: #f59e0b;
+}
+
+.hero-text p {
+    color: #cbd5e1;
+    margin-bottom: 25px;
+}
+
+/* Tombol / Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background-color: #f59e0b;
+    color: #0f172a;
+    margin-right: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #d97706;
+}
+
+.btn-secondary {
+    background-color: #334155;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #475569;
+}
+
+/* Section Umum */
+.section {
+    padding: 60px 0;
+}
+
+.bg-light {
+    background-color: #f1f5f9;
+}
+
+.bg-dark {
+    background-color: #0f172a;
+}
+
+.text-white {
+    color: white;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sub-title {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #2563eb;
+    background-color: #dbeafe;
+    padding: 4px 12px;
+    border-radius: 12px;
+}
+
+.section-title h2 {
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+.section-title p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* Cards (Kartu Visi & Misi) */
+.card-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    min-width: 280px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    border: 2px solid #e2e8f0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #2563eb;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.card-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.blue-icon { background-color: #2563eb; color: white; }
+.gold-icon { background-color: #f59e0b; color: #0f172a; }
+.dark-icon { background-color: #0f172a; color: #f59e0b; }
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow-icon { font-size: 14px; color: #94a3b8; }
+
+.card p {
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 20px;
+}
+
+.card-link {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.blue-text { color: #2563eb; }
+.gold-text { color: #f59e0b; }
+
+.single-card-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.center-card {
+    text-align: center;
+}
+
+.center-card .card-icon {
+    margin: 0 auto 20px auto;
+}
+
+/* Contact Section */
+.contact-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-card {
+    flex: 1;
+    min-width: 250px;
+    background-color: #1e293b;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #334155;
+}
+
+.contact-icon {
+    font-size: 24px;
+    color: #f59e0b;
+    margin-bottom: 15px;
+}
+
+.contact-card h4 {
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    font-size: 13px;
+    color: #cbd5e1;
+}
+
+/* Footer */
+.footer {
+    background-color: #020617;
+    color: #64748b;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 12px;
+    border-t: 1px solid #1e293b;
+}
+
+/* Modal Pop-up */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 200;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 500px;
+    width: 100%;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #94a3b8;
+}
+
+.close-btn:hover { color: #0f172a; }
+
+.modal-body {
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+.bg-quote {
+    background-color: #f8fafc;
+    padding: 15px;
+    border-left: 4px solid #2563eb;
+    font-style: italic;
+}
+
+.modal-list {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.modal-list li {
+    font-size: 13px;
+    margin-bottom: 10px;
+    background: #f1f5f9;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.modal-list i { color: #10b981; margin-right: 8px; }
+
+/* Mini Org Chart */
+.org-chart { text-align: center; margin-top: 15px; }
+.org-box { padding: 10px; border-radius: 8px; color: white; }
+.main-box { background-color: #0f172a; border-bottom: 3px solid #f59e0b; }
+.sub-box { background-color: #2563eb; max-width: 250px; margin: 0 auto; }
+.org-line { width: 2px; height: 15px; background-color: #cbd5e1; margin: 0 auto; }
+.org-grid { display: flex; gap: 8px; justify-content: center; }
+.org-mini-box { background-color: #f1f5f9; padding: 8px; border-radius: 6px; font-size: 11px; font-weight: bold; flex: 1; }
+
+.mt-15 { margin-top: 15px; }
+
+/* Responsive HP */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #0f172a;
+        padding: 20px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        margin: 10px 0;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .hero-text h2 {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satpol PP Kota Semarang</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-white text-dark">
+
+    
+    <header class="navbar bg-white border-bottom">
+        <div class="container navbar-content">
+            <div class="logo-jateng" style="display: flex; align-items: center; gap: 12px;">
+                <img src="Lambang_Kota_Semarang.jpg" alt="Logo Satpol PP Kota Semarang" style="height: 48px; width: auto; object-fit: contain;">
+                <div>
+                    <h1 style="font-size: 1.1rem; margin: 0; line-height: 1.2;">SATPOL PP</h1>
+                    <p style="font-size: 0.85rem; margin: 0; color: #555;">KOTA SEMARANG</p>
+                </div>
+            </div>
+
+            
+            <nav class="nav-links" id="navLinks">
+                <a href="#beranda">Beranda</a>
+                <a href="#visimisi">Visi & Misi</a>
+                <a href="#struktur">Struktur Organisasi</a>
+                <a href="#kontak">Alamat & Kontak</a>
+            </nav>
+
+            <!-- Tombol Mobile Menu -->
+            <button class="menu-btn" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- 1. Hero Banner Wali Kota Semarang -->
+    <section id="beranda" class="hero bg-white">
+        <div class="container hero-content">
+            <div class="hero-image-wrapper" style="max-width: 320px; margin: 0 auto;">
+                <div class="hero-image">
+                    <img src="wali_kota_smg.jpg" alt="Wali Kota Semarang" style="width: 100%; height: auto; max-height: 380px; object-fit: cover; border-radius: 12px;">
+                    <div class="image-caption">
+                        <h3>Wali Kota Semarang</h3>
+                        <p>Pemerintah Kota Semarang</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-text">
+                <span class="badge"><i class="fa-solid fa-building-columns"></i> Website Resmi</span>
+                <h2>Selamat Datang di Website Resmi <span>Satpol PP Kota Semarang</span></h2>
+                <p>Mewujudkan Kota Semarang yang aman, tertib, tenteram, dan berwibawa melalui penegakan Peraturan Daerah serta penyelenggaraan ketertiban umum.</p>
+                <div class="hero-buttons">
+                    <a href="#visimisi" class="btn btn-primary">Lihat Visi & Misi <i class="fa-solid fa-arrow-down"></i></a>
+                    <a href="#struktur" class="btn btn-secondary">Struktur Organisasi</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Section Visi & Misi -->
+    <section id="visimisi" class="section bg-white border-top">
+        <div class="container">
+            <div class="section-title">
+                <span class="sub-title">Pedoman Utama</span>
+                <h2>Visi & Misi Satpol PP</h2>
+                <p>Klik kartu di bawah ini untuk melihat detail Visi dan Misi lengkap.</p>
+            </div>
+
+            <div class="card-grid">
+                <!-- Card Visi -->
+                <div class="card bg-white" onclick="openModal('modalVisi')">
+                    <div class="card-icon blue-icon">
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <h3>VISI SATPOL PP <i class="fa-solid fa-chevron-right arrow-icon"></i></h3>
+                    <p>Terwujudnya Kota Semarang yang Tertib, Tenteram, Aman, dan Taat Peraturan Daerah.</p>
+                    <span class="card-link blue-text">Klik untuk selengkapnya &rarr;</span>
+                </div>
+
+                <!-- Card Misi -->
+                <div class="card bg-white" onclick="openModal('modalMisi')">
+                    <div class="card-icon gold-icon">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                    <h3>MISI SATPOL PP <i class="fa-solid fa-chevron-right arrow-icon"></i></h3>
+                    <p>Meningkatkan penegakan Perda, perlindungan masyarakat, serta kesadaran hukum warga.</p>
+                    <span class="card-link gold-text">Klik untuk selengkapnya &rarr;</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Section Struktur Organisasi -->
+    <section id="struktur" class="section bg-white border-top">
+        <div class="container">
+            <div class="section-title">
+                <span class="sub-title">Bagan Kepemimpinan</span>
+                <h2>Struktur Organisasi</h2>
+                <p>Klik kartu di bawah untuk membuka bagan dan susunan pimpinan lengkap.</p>
+            </div>
+
+            <div class="single-card-wrapper">
+                <div class="card center-card bg-white" onclick="openModal('modalStruktur')">
+                    <div class="card-icon dark-icon">
+                        <i class="fa-solid fa-sitemap"></i>
+                    </div>
+                    <h3>Bagan & Susunan Pimpinan Satpol PP</h3>
+                    <p>Menampilkan hirarki Kepala Satpol PP Kota Semarang, Sekretariat, dan Kepala Bidang Operasional.</p>
+                    <button class="btn btn-primary mt-15"><i class="fa-solid fa-diagram-project"></i> Buka Bagan Struktur</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Section Alamat & Kontak -->
+    <section id="kontak" class="section bg-white border-top">
+        <div class="container">
+            <div class="section-title">
+                <span class="sub-title">Informasi Resmi</span>
+                <h2>Alamat & Kontak Kami</h2>
+                <p>Hubungi atau kunjungi kantor operasional Satpol PP Kota Semarang.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-card bg-white">
+                    <i class="fa-solid fa-location-dot contact-icon"></i>
+                    <h4>Alamat Kantor</h4>
+                    <p>Jl. Usman Janatin No. 21, Dadapsari, Kec. Semarang Utara, Kota Semarang, Jawa Tengah 50171</p>
+                </div>
+                <div class="contact-card bg-white">
+                    <i class="fa-solid fa-phone contact-icon"></i>
+                    <h4>Telepon & Fax</h4>
+                    <p><strong>Telepon:</strong> (024) 3541430</p>
+                    <p><strong>Call Center Darurat:</strong> 112</p>
+                </div>
+                <div class="contact-card bg-white">
+                    <i class="fa-solid fa-envelope contact-icon"></i>
+                    <h4>Email & Jam Kerja</h4>
+                    <p><strong>Email:</strong> satpolpp@semarangkota.go.id</p>
+                    <p><strong>Jam Kerja:</strong> Senin - Jumat (07.00 - 15.30 WIB)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Copyright -->
+    <footer class="footer bg-white border-top">
+        <div class="container">
+            <p>&copy; 2026 Satuan Polisi Pamong Praja Kota Semarang. Hak Cipta Dilindungi Undang-Undang.</p>
+        </div>
+    </footer>
+
+    <!-- ================= MODAL POP-UPS ================= -->
+    <!-- Modal Visi -->
+    <div id="modalVisi" class="modal">
+        <div class="modal-content bg-white">
+            <span class="close-btn" onclick="closeModal('modalVisi')">&times;</span>
+            <h3><i class="fa-solid fa-eye"></i> Visi Satpol PP Kota Semarang</h3>
+            <div class="modal-body bg-quote">
+                "Terwujudnya Kota Semarang yang Tertib, Tenteram, Aman, dan Taat Peraturan Daerah guna Mendukung Kota Semarang yang Setara dan Berkelanjutan."
+            </div>
+            <button class="btn btn-secondary mt-15" onclick="closeModal('modalVisi')">Tutup</button>
+        </div>
+    </div>
+
+    <!-- Modal Misi -->
+    <div id="modalMisi" class="modal">
+        <div class="modal-content bg-white">
+            <span class="close-btn" onclick="closeModal('modalMisi')">&times;</span>
+            <h3><i class="fa-solid fa-bullseye"></i> Misi Satpol PP Kota Semarang</h3>
+            <ul class="modal-list">
+                <li><i class="fa-solid fa-check"></i> <strong>Penegakan Perda & Perwal:</strong> Menyelenggarakan tindakan penegakan hukum daerah secara humanis dan tegas.</li>
+                <li><i class="fa-solid fa-check"></i> <strong>Ketertiban Umum:</strong> Menciptakan ketenteraman masyarakat di seluruh wilayah Kota Semarang.</li>
+                <li><i class="fa-solid fa-check"></i> <strong>Peran Linmas:</strong> Mengembangkan kapasitas Perlindungan Masyarakat dalam penanggulangan bencana dan keamanan.</li>
+                <li><i class="fa-solid fa-check"></i> <strong>Kesadaran Hukum:</strong> Mengedukasi masyarakat Kota Semarang agar patuh terhadap Peraturan Daerah.</li>
+            </ul>
+            <button class="btn btn-secondary mt-15" onclick="closeModal('modalMisi')">Tutup</button>
+        </div>
+    </div>
+
+    <!-- Modal Struktur -->
+    <div id="modalStruktur" class="modal">
+        <div class="modal-content bg-white">
+            <span class="close-btn" onclick="closeModal('modalStruktur')">&times;</span>
+            <h3><i class="fa-solid fa-sitemap"></i> Struktur Organisasi</h3>
+            <div class="org-chart">
+                <div class="org-box main-box">
+                    <span>Pimpinan Tinggi</span>
+                    <h4>KEPALA SATPOL PP</h4>
+                    <p>Drs. Kusnandir, M.M.</p>
+                </div>
+                <div class="org-line"></div>
+                <div class="org-box sub-box">
+                    <span>Sekretariat</span>
+                    <h4>SEKRETARIS SATPOL PP</h4>
+                </div>
+                <div class="org-line"></div>
+                <div class="org-grid">
+                    <div class="org-mini-box">Kabid PPUD</div>
+                    <div class="org-mini-box">Kabid Tibum Tranmas</div>
+                    <div class="org-mini-box">Kabid Linmas</div>
+                    <div class="org-mini-box">Kabid Bimas</div>
+                </div>
+            </div>
+            <button class="btn btn-secondary mt-15" onclick="closeModal('modalStruktur')">Tutup</button>
+        </div>
+    </div>
+
+    <!-- JavaScript External -->
+    <script src="script.js"></script>
+</body>
+</html>
